@@ -1,0 +1,20 @@
+SELECT
+    id,
+    external_ref,
+    relation_type,
+    relation_role,
+    display_name,
+    first_name,
+    last_name,
+    company_name,
+    tax_id,
+    email,
+    phone,
+    street_address,
+    postal_code,
+    city,
+    country_code,
+    status,
+    created_at,
+    updated_at
+FROM {{ ref('stg_relations') }}
